@@ -1,39 +1,171 @@
 import { StyleSheet } from "react-native";
-import { INPUT_COLOR, PRIMARY_COLOR } from "../commons/constants";
+import { INPUT_COLOR, PRIMARY_COLOR, SECONDARY_COLOR, TERTIARY_COLOR } from "../commons/constants";
 
 export const styles = StyleSheet.create({
     titleWelcome: {
-        fontSize: 17,
+        fontSize: 30,
         fontWeight: 'bold',
-        color: INPUT_COLOR
+        textAlign: 'center',
+        color: PRIMARY_COLOR,
+        marginBottom: 10,
     },
     textDescription: {
-        fontSize: 15,
-        color: INPUT_COLOR,
-        paddingVertical: 10
+        fontSize: 16,
+        color: PRIMARY_COLOR,
+        textAlign: 'center',
+        marginBottom: 20,
     },
     containerForm: {
-        marginVertical: 10
-     
+        marginVertical: 20,
+        marginHorizontal: 10,
     },
-    iconForm:{
-        position:'absolute',
-        bottom:15,
-        right:10
-
+    iconForm: {
+        position: 'absolute',
+        bottom: 15,
+        right: 15,
+        color: PRIMARY_COLOR,
     },
-    textRedirect:{
-        fontSize: 15,
-        fontWeight:'bold',
-        color: INPUT_COLOR,
-        textAlign:'center',
-        marginTop:20
+    textRegister: {
+        fontSize: 14,
+        fontWeight: 'bold',
+        color: 'black',
+        marginTop: 20,
+        textAlign: 'center',
     },
-    img : {
-    width: 200,
-    height: 200,
-    alignSelf: 'center',
-    marginTop: -50
-  },
-
+    containerModal: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    modal: {
+        backgroundColor: SECONDARY_COLOR,
+        borderRadius: 15,
+        padding: 20,
+        width: '90%',
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+    },
+    headerModal: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        borderBottomColor: INPUT_COLOR,
+        borderBottomWidth: 1,
+        paddingBottom: 10,
+        marginBottom: 15,
+    },
+    containerIcon: {
+        flex: 1,
+        alignItems: 'flex-end',
+    },
+    title: {
+        fontSize: 22,
+        fontWeight: 'bold',
+        color: PRIMARY_COLOR,
+    },
+    imageModal: {
+        width: 150,
+        height: 150,
+        borderRadius: 10,
+        alignSelf: 'center',
+        marginVertical: 15,
+    },
+    containerQuiantity: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginVertical: 20,
+    },
+    buttonQuantity: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: PRIMARY_COLOR,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    buttonQuantityText: {
+        color: 'black',
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    buttonAddCart: {
+        backgroundColor: TERTIARY_COLOR,
+        paddingVertical: 15,
+        borderRadius: 10,
+        alignItems: 'center',
+        marginHorizontal: 30,
+        marginTop: 20,
+    },
+    buttonAddCartText: {
+        color: SECONDARY_COLOR,
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+    textTotal: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: PRIMARY_COLOR,
+        textAlign: 'center',
+        marginTop: 15,
+    },
+    textStock: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#ff4d4d',
+        textAlign: 'center',
+        marginTop: 10,
+    },
+    img: {
+        width: 180,
+        height: 180,
+        alignSelf: 'center',
+        marginTop: -30,
+        marginBottom: 10,
+    },
+    headerHome: {
+        flexDirection: 'row',
+        backgroundColor: PRIMARY_COLOR,
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        paddingHorizontal: 20,
+        paddingVertical: 18,
+    },
+    textIconCart: {
+        fontSize: 12,
+        fontWeight: 'bold',
+        backgroundColor: TERTIARY_COLOR,
+        color: SECONDARY_COLOR,
+        paddingHorizontal: 6,
+        paddingVertical: 2,
+        borderRadius: 10,
+        position: 'absolute',
+        top: -5,
+        right: -5,
+        zIndex: 1,
+    },
+    iconCart: {
+        position: 'relative',
+    },
+    titleHome: {
+        fontSize: 28,
+        fontWeight: 'bold',
+        color: SECONDARY_COLOR,
+    },
+    bodyContainer: {
+        flex: 1,
+        backgroundColor: TERTIARY_COLOR,
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
+        paddingHorizontal: 10,
+        paddingTop: 20,
+    },
+    productList: {
+        paddingTop: 10,
+        paddingHorizontal: 5,
+    }
 });
